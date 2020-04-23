@@ -1,4 +1,4 @@
-### Create a Dev Environment for the Node Sample App
+### Create a Dev Environment for the Node Sample App 😫
 
 - On bash command line, cd into  file and run ```vagrant init``` to creates a vagrant file.
 
