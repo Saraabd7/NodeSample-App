@@ -52,14 +52,17 @@ Run the following commands:
 
 - cd app
 
-- sudo npm install - this installs dependencies from the .json file
+- sudo npm install to this installs dependencies from the .json file
 
-- sudo npm start - this loads/runs the .js file
+- sudo npm start to this loads/runs the .js file
+
+- npm start, node seeds/seed.js to run the posts
 
 - After that, a  message will come up that  ***app is ready and listening on port 3000***
 
 - Whilst still inside the VM, go on browser and type in 'development.local:3000' in the search bar and you should see the homepage displaying a ***Sparta logo*** and a message.
-- Also, in the browser  type ```development.local:3000/fibonacci/<any number> ```
+-  In the browser  type ```development.local:3000/fibonacci/<any number> ```
 to get ***Fibonacci Generator***.
 
-**
+- In the browser  type ```development.local:3000/posts/ ```
+to get ***posts***.
