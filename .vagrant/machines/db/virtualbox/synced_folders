@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/ubuntu/environment":{"guestpath":"/home/ubuntu/environment","hostpath":"/Users/Sabdrabu/code/opscode/NodeJs-app/Nodejs-app/environment/db","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/Sabdrabu/code/opscode/NodeJs-app/Nodejs-app","disabled":false,"__vagrantfile":true}}}
