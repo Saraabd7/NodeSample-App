@@ -20,6 +20,10 @@ sudo apt-get install nodejs -y
 # install pm2
 sudo npm install pm2 -g
 
+
+
+
+
 cd /home/ubuntu/app
 sudo npm install ejs mongoose express
 node seeds/seed.js
