@@ -1,8 +1,8 @@
-### Create a Dev Environment for the Node Sample App
+### Create a Dev Environment for the Node Sample App 😫
 
-- On bash command line, cd into  file and run ```vagrant init``` - this creates a vagrant file.
+- On bash command line, cd into  file and run ```vagrant init``` to creates a vagrant file.
 
-- Run ```atom .```  toopens the vagrant file on atom
+- Run ```atom .```  to opens the vagrant file on atom
 
 - On Vagrantfile set and sync synced_folder:
 
@@ -21,10 +21,12 @@ Vagrant.configure("2") do |config|
 
 - Run ```vagrant ssh <machine name>```  to enters the VM.
 
-- Run ```sudo apt-get update``` to updates packages
+- Run ```sudo apt-get update``` to updates packages.
+
 - To install npm, inside the VM run the command:
 
-``` sudo apt-get install npm
+```
+sudo apt-get install npm
 
 ```
 
@@ -48,7 +50,7 @@ Run the following commands:
 
 - ls - make sure that 'app' is there
 
--cd app
+- cd app
 
 - sudo npm install - this installs dependencies from the .json file
 
@@ -59,3 +61,5 @@ Run the following commands:
 - Whilst still inside the VM, go on browser and type in 'development.local:3000' in the search bar and you should see the homepage displaying a ***Sparta logo*** and a message.
 - Also, in the browser  type ```development.local:3000/fibonacci/<any number> ```
 to get ***Fibonacci Generator***.
+
+**
