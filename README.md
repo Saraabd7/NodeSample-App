@@ -61,3 +61,5 @@ Run the following commands:
 - Whilst still inside the VM, go on browser and type in 'development.local:3000' in the search bar and you should see the homepage displaying a ***Sparta logo*** and a message.
 - Also, in the browser  type ```development.local:3000/fibonacci/<any number> ```
 to get ***Fibonacci Generator***.
+
+**
