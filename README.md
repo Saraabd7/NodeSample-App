@@ -1,40 +1,16 @@
 ### Create a Dev Environment for the Node Sample App 😫
 
-- On bash command line, cd into  file and run ```vagrant init``` to creates a vagrant file.
 
-- Run ```atom .```  to opens the vagrant file on atom
+This app is intended for use with the Sparta Global DevOps Stream as a sample app
 
-- On Vagrantfile set and sync synced_folder:
 
-```
-Vagrant.configure("2") do |config|
-  config.vm.define "app" do |app|
-    app.vm.box = "ubuntu/xenial64"
-    app.vm.network "private_network", ip: "192.168.10.100"
-    app.hostsupdater.aliases = ["development.local"]
-    app.vm.synced_folder "app", "/home/ubuntu/app"
-    app.vm.synced_folder "environment/app", "/home/ubuntu/environment"
+## Usage
 
-```
+### Provision VM:
 
-- Run ```vagrant up``` to spins up the machine
-
-- Run ```vagrant ssh <machine name>```  to enters the VM.
-
-- Run ```sudo apt-get update``` to updates packages.
-
-- To install npm, inside the VM run the command:
-
-```
-sudo apt-get install npm
-
-```
-
-- To start up npm:
-```
-sudo systemctl start npm
-```
 - The machine needs to be provisioned, this means to make a bash script to run on vagrant so sudo apt-get update and sudo apt-get install npm and other commands are automatically run at the start by running ``` vagrant provision```
+
+### Install/Start npm:
 
 - To Install npm and start it:
 
@@ -44,13 +20,8 @@ Run ```vagrant ssh``` to enter the VM.
 
 - Inside VM will have to move to the correct location of the synced folder inside it, in this case, it's in '/app'
 Run the following commands:
-- cd ..
 
-- cd ubuntu
-
-- ls - make sure that 'app' is there
-
-- cd app
+- cd/home/ubuntu/app
 
 - sudo npm install to this installs dependencies from the .json file
 
@@ -60,9 +31,26 @@ Run the following commands:
 
 - After that, a  message will come up that  ***app is ready and listening on port 3000***
 
-- Whilst still inside the VM, go on browser and type in 'development.local:3000' in the search bar and you should see the homepage displaying a ***Sparta logo*** and a message.
--  In the browser  type ```development.local:3000/fibonacci/<any number> ```
-to get ***Fibonacci Generator***.
+## The app is a node app with three pages:
 
-- In the browser  type ```development.local:3000/posts/ ```
+1. Homepage
+
+- Whilst still inside the VM, go on browser and type in ```localhost:3000``` in the search bar and you should see the homepage displaying a ***Sparta logo*** and a message.
+
+2. A Fibonacci number generator
+
+-  On browser and type in ```localhost:3000/fibonacci/{index} ```
+to get ***Fibonacci Generator***. The higher the Fibonacci number requested the longer the request will take. A very large number can crash or block the process.
+
+3. Blog (posts)
+
+- On browser and type in ```development.local:3000/posts/ ```
 to get ***posts***.
+
+This page displays a logo and randomly generated blog posts. The posts are generated during the seeding step. It is only accessible when a database is available and the DB_HOST environment variable has been set with its location.
+
+## Tests
+
+```
+npm test
+```
