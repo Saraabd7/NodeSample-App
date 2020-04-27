@@ -16,7 +16,7 @@ This app is intended for use with the Sparta Global DevOps Stream as a sample ap
 
 Move to the correct location where the synced folder is, in this case, it's in 'app' which is inside 'Nodejs-app(starter-code)'.
 
-### Running App
+### Running App:
 
 Run ```vagrant ssh``` to enter the VM.
 
@@ -47,9 +47,7 @@ to get ***Fibonacci Generator***. The higher the Fibonacci number requested the 
 3. Blog (posts)
 
 - On browser and type in ```development.local:3000/posts/ ```
-to get ***posts***.
-
-This page displays a logo and randomly generated blog posts. The posts are generated during the seeding step. It is only accessible when a database is available and the DB_HOST environment variable has been set with its location.
+to get ***posts***. This page displays a logo and randomly generated blog posts. The posts are generated during the seeding step. It is only accessible when a database is available and the DB_HOST environment variable has been set with its location.
 
 ## Tests
 
