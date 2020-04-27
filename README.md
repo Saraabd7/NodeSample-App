@@ -16,6 +16,8 @@ This app is intended for use with the Sparta Global DevOps Stream as a sample ap
 
 Move to the correct location where the synced folder is, in this case, it's in 'app' which is inside 'Nodejs-app(starter-code)'.
 
+### Running App
+
 Run ```vagrant ssh``` to enter the VM.
 
 - Inside VM will have to move to the correct location of the synced folder inside it, in this case, it's in '/app'
